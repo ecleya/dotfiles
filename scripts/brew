@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+brew install bat
+brew install direnv
+brew install mas
+brew install peco
+brew install pyenv

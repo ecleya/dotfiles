@@ -1,0 +1,27 @@
+use_python() {
+  local python_root=$HOME/.pyenv/versions/$1
+  load_prefix "$python_root"
+  layout_python "$python_root/bin/python"
+}
+
+use_terraform() {
+  local terraform_root=$(direnv_layout_dir)/terraform/$1
+  if [ ! -d ${terraform_root} ]; then
+    echo "terraform exists"
+    curl -o /tmp/terraform.zip https://releases.hashicorp.com/terraform/$1/terraform_$1_darwin_amd64.zip
+    mkdir -p ${terraform_root}/bin/
+    unzip /tmp/terraform.zip -d ${terraform_root}/bin/
+  fi
+
+  load_prefix "$terraform_root"
+}
+
+use_nodejs() {
+  local nodejs_version=$HOME/.nodejs/versions/$1
+  if [ ! -d ${nodejs_version} ]; then
+    mkdir -p $nodejs_version
+    curl -fsSL http://nodejs.org/dist/v$1/node-v$1-darwin-x64.tar.gz | tar xvz --strip 1 -C $nodejs_version
+  fi
+
+  load_prefix "$nodejs_version"
+}

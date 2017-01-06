@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+xcode-select --install
+read -p "Press any key to continue... " -n1 -s
+
+sudo xcodebuild -license accept
+read -p "Press any key to continue... " -n1 -s
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

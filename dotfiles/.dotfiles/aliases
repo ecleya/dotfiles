@@ -1,0 +1,18 @@
+# scripts
+rename() {
+    ARGUMENTS=$(printf " \"%s\"" "${@:2}")
+    if [ "$1" = "movie" ] ; then
+        docker-compose -f ~/Projects/scripts/docker-compose.yml run -v "$(pwd):/src" -v "${HOME}/Movies:/dst" --entrypoint="inv organize-movie $ARGUMENTS" service
+    elif [ "$1" = "tvshow" ] ; then
+        docker-compose -f ~/Projects/scripts/docker-compose.yml run -v "$(pwd):/src" -v "${HOME}/Movies:/dst" --entrypoint="inv organize-tvshow $ARGUMENTS" service
+    fi
+}
+
+bluray() {
+    ARGUMENTS=$(printf " \"%s\"" "${@:2}")
+    if [ "$1" = "movie" ] ; then
+        docker-compose -f ~/Projects/scripts/docker-compose.yml run -v "$(pwd):/src" --entrypoint="inv organize-bluray $ARGUMENTS" service
+    elif [ "$1" = "optimize" ] ; then
+        docker-compose -f ~/Projects/scripts/docker-compose.yml run -v "${HOME}/Google Drive:/src" --entrypoint="inv optimize-bluray" service
+    fi
+}

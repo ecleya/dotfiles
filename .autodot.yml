@@ -1,0 +1,15 @@
+brew: true
+brew_cask: true
+app_store: true
+preferences: true
+login_items:
+- Alfred 3
+- Backup and Sync from Google
+- Bear
+- Line
+- Slack
+- Spectacle
+dotfiles:
+- .bash_profile
+- .direnvrc
+- .dotfiles
