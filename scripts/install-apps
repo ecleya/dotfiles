@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+####################################
+# install apps from App Store      #
+####################################
+
+# install Xcode
+mas install 497799835
+
+# install PiPifier
+mas install 1160374471
+
+# install Ulysses
+mas install 623795237
+
+# install Slack
+mas install 803453959
+
+# install Day One
+mas install 1055511498
+
+# install Evernote
+mas install 406056744
+
+# install Line
+mas install 539883307
+
+# install OmniFocus 2
+mas install 867299399
+
+####################################
+# install apps using brew cask     #
+####################################
+
+brew cask install google-chrome
+brew cask install atom
+brew cask install github-desktop
+brew cask install parallels-desktop
+brew cask install appcleaner
+brew cask install alfred
+brew cask install vlc
+brew cask install iterm2
+brew cask install docker
