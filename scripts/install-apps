@@ -28,6 +28,9 @@ mas install 539883307
 # install OmniFocus 2
 mas install 867299399
 
+# install 1Password
+mas install 443987910
+
 ####################################
 # install apps using brew cask     #
 ####################################
@@ -41,3 +44,9 @@ brew cask install alfred
 brew cask install vlc
 brew cask install iterm2
 brew cask install docker
+brew cask install steam
+brew cask install spectacle
+brew cask install rescuetime
+brew cask install flux
+brew cask install battle-net
+open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
