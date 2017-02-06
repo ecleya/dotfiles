@@ -54,5 +54,8 @@ brew cask install steam
 brew cask install spectacle
 brew cask install rescuetime
 brew cask install flux
+brew cask install java
+brew cask install virtualbox
+brew cask install genymotion
 brew cask install battle-net
 open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app

@@ -2,6 +2,7 @@
 source ./scripts/brew
 source ./scripts/brew-update
 source ./scripts/install-apps
+source ./scripts/dev-settings
 source ./scripts/preferences
 
 ln -s ./dotfiles/.bash_profile ~/

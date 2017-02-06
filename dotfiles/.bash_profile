@@ -36,4 +36,8 @@ bind '"\C-r":"peco-history\n"'
 export HISTFILESIZE=
 export HISTSIZE=
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 source /usr/local/opt/autoenv/activate.sh

@@ -10,4 +10,11 @@ brew install awscli
 brew install pyenv
 brew install pyenv-virtualenv
 brew install homebrew/dupes/rsync
+brew install watchman
+brew install flow
+brew install nvm
 brew install autoenv
+
+nvm install node
+
+npm install -g react-native-cli
