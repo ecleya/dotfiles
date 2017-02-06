@@ -7,4 +7,7 @@ brew install ffmpeg --with-x265 --with-fdk-aac
 brew install mkvtoolnix
 brew install mediainfo
 brew install awscli
+brew install pyenv
+brew install pyenv-virtualenv
 brew install homebrew/dupes/rsync
+brew install autoenv

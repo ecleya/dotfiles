@@ -35,3 +35,5 @@ bind '"\C-r":"peco-history\n"'
 
 export HISTFILESIZE=
 export HISTSIZE=
+
+source /usr/local/opt/autoenv/activate.sh

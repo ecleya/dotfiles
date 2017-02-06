@@ -31,6 +31,12 @@ mas install 867299399
 # install 1Password
 mas install 443987910
 
+# install Bear
+mas install 1091189122
+
+# install Keynote
+mas install 409183694
+
 ####################################
 # install apps using brew cask     #
 ####################################
