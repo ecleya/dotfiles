@@ -1,20 +1,10 @@
 #!/usr/bin/env bash
 
 brew install mas
+brew install ruby
 brew install python3
 brew install peco
 brew install ffmpeg --with-x265 --with-fdk-aac
 brew install mkvtoolnix
 brew install mediainfo
 brew install awscli
-brew install pyenv
-brew install pyenv-virtualenv
-brew install homebrew/dupes/rsync
-brew install watchman
-brew install flow
-brew install nvm
-brew install autoenv
-
-nvm install node
-
-npm install -g react-native-cli

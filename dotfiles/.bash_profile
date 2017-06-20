@@ -1,3 +1,8 @@
+for file in ~/.{bash_prompt}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 # from http://qiita.com/yungsang/items/09890a06d204bf398eea by yungsang
 
 export HISTCONTROL="ignoredups"
@@ -36,8 +41,7 @@ bind '"\C-r":"peco-history\n"'
 export HISTFILESIZE=
 export HISTSIZE=
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+export PATH="$HOME/.fastlane/bin:$PATH"
+eval "$(direnv hook bash)"
 
-source /usr/local/opt/autoenv/activate.sh
+alias python='python3'

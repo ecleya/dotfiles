@@ -10,23 +10,14 @@ mas install 497799835
 # install PiPifier
 mas install 1160374471
 
-# install Ulysses
-mas install 623795237
-
 # install Slack
 mas install 803453959
 
 # install Day One
 mas install 1055511498
 
-# install Evernote
-mas install 406056744
-
 # install Line
 mas install 539883307
-
-# install OmniFocus 2
-mas install 867299399
 
 # install 1Password
 mas install 443987910
@@ -37,25 +28,70 @@ mas install 1091189122
 # install Keynote
 mas install 409183694
 
+# install Pages
+mas install 409201541
+
+# install Numbers
+mas install 409203825
+
+# install Telegram
+mas install 747648890
+
+# install Things 3
+mas install 904280696
+
+# install The Unarchiver
+mas install 425424353
+
+# install iMovie
+mas install 408981434
+
+# install Microsoft Remote Desktop
+mas install 715768417
+
+# install Be Focused
+mas install 973134470
+
+# install Twitter
+mas install 409789998
+
 ####################################
 # install apps using brew cask     #
 ####################################
 
 brew cask install google-chrome
-brew cask install atom
 brew cask install github-desktop
 brew cask install parallels-desktop
 brew cask install appcleaner
 brew cask install alfred
 brew cask install vlc
 brew cask install iterm2
-brew cask install docker
 brew cask install steam
 brew cask install spectacle
-brew cask install rescuetime
-brew cask install flux
 brew cask install java
 brew cask install virtualbox
-brew cask install genymotion
+brew cask install docker
 brew cask install battle-net
+brew cask install visual-studio-code
+brew cask install aegisub
+brew cask install selfcontrol
+brew cask install google-drive
+brew cask install zeplin
+brew cask install ridibooks
+
 open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
+
+
+################################################
+# Set some application to start at login items #
+################################################
+
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "SelfControl", path:"/Applications/SelfControl.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Line", path:"/Applications/Line.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Slack", path:"/Applications/Slack.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Be Focused", path:"/Applications/Be Focused.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Things", path:"/Applications/Things.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Google Drive", path:"/Applications/Google Drive.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 3", path:"/Applications/Alfred 3.app", hidden:false}'

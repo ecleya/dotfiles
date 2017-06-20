@@ -1,29 +1,15 @@
 #!/usr/bin/env bash
 
-########
-# brew #
-########
+############
+# generals #
+############
 
-brew install watchman
-brew install flow
-brew install nvm
+brew install direnv
+
+
+##########
+# python #
+##########
+
 brew install pyenv
 brew install pyenv-virtualenv
-brew install autoenv
-brew install android-sdk
-
-
-########
-# node #
-########
-
-nvm install node
-npm install -g react-native-cli
-
-
-########
-# apex #
-########
-
-curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh
-apex upgrade
