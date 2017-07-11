@@ -13,3 +13,9 @@ brew install direnv
 
 brew install pyenv
 brew install pyenv-virtualenv
+
+#############
+# terraform #
+#############
+
+brew install tfenv

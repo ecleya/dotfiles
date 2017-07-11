@@ -49,9 +49,6 @@ mas install 408981434
 # install Microsoft Remote Desktop
 mas install 715768417
 
-# install Be Focused
-mas install 973134470
-
 # install Twitter
 mas install 409789998
 
@@ -59,25 +56,33 @@ mas install 409789998
 # install apps using brew cask     #
 ####################################
 
+# Utilities
 brew cask install google-chrome
 brew cask install github-desktop
 brew cask install parallels-desktop
 brew cask install appcleaner
 brew cask install alfred
-brew cask install vlc
 brew cask install iterm2
-brew cask install steam
 brew cask install spectacle
-brew cask install java
-brew cask install virtualbox
-brew cask install docker
-brew cask install battle-net
-brew cask install visual-studio-code
 brew cask install aegisub
-brew cask install selfcontrol
 brew cask install google-drive
-brew cask install zeplin
+
+# Entertainment
+brew cask install vlc
 brew cask install ridibooks
+
+# Games
+brew cask install steam
+brew cask install battle-net
+
+# Development Tools
+brew cask install docker
+brew cask install visual-studio-code
+brew cask install zeplin
+
+# Get Focused
+brew cask install selfcontrol
+brew cask install rescuetime
 
 open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
