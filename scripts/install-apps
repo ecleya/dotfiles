@@ -78,6 +78,7 @@ brew cask install battle-net
 # Development Tools
 brew cask install docker
 brew cask install visual-studio-code
+beew cask install fastlane
 brew cask install zeplin
 
 # Get Focused
