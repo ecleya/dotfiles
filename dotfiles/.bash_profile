@@ -45,3 +45,7 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 eval "$(direnv hook bash)"
 
 alias python='python3'
+alias pip='pip3'
+alias short-break='nohup self_control.py short-break > /dev/null &'
+alias long-break='nohup self_control.py long-break > /dev/null &'
+alias entertainment='nohup self_control.py entertainment > /dev/null &'

@@ -52,6 +52,12 @@ mas install 715768417
 # install Twitter
 mas install 409789998
 
+# install Ulysses (Old version)
+mas install 623795237
+
+# install Be Focused
+mas install 973134470
+
 ####################################
 # install apps using brew cask     #
 ####################################
@@ -65,7 +71,7 @@ brew cask install alfred
 brew cask install iterm2
 brew cask install spectacle
 brew cask install aegisub
-brew cask install google-drive
+brew cask install google-backup-and-sync
 
 # Entertainment
 brew cask install vlc
@@ -73,7 +79,6 @@ brew cask install ridibooks
 
 # Games
 brew cask install steam
-brew cask install battle-net
 
 # Development Tools
 brew cask install docker
@@ -84,8 +89,6 @@ brew cask install zeplin
 # Get Focused
 brew cask install selfcontrol
 brew cask install rescuetime
-
-open /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
 
 ################################################
@@ -98,6 +101,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Be Focused", path:"/Applications/Be Focused.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Things", path:"/Applications/Things.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Google Drive", path:"/Applications/Google Drive.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 3", path:"/Applications/Alfred 3.app", hidden:false}'
