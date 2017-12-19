@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+# install Quiver
+mas install 866773894
+
+# install Things3
+mas install 904280696
+
+# install LINE
+mas install 539883307
+
+# install Keynote
+mas install 409183694
+
+# install HeliumLift
+mas install 1018899653
+
+# install Telegram
+mas install 747648890
+
+# install Airmail 3
+mas install 918858936
+
+# install Twitter
+mas install 409789998
+
+# install The Unarchiver
+mas install 425424353
+
+# install 1Password
+mas install 443987910
+
+# install Be Focused
+mas install 973134470
+
+# install Numbers
+mas install 409203825
+
+# install Xcode
+mas install 497799835
+
+# install Pages
+mas install 409201541
+
+# install Bear
+mas install 1091189122
+
+# install iMovie
+mas install 408981434
+
+# install Microsoft Remote Desktop
+mas install 715768417
+
+# install Slack
+mas install 803453959
+
+# install Day One
+mas install 1055511498
+
+# install PiPifier
+mas install 1160374471
+
+# install UlyssesMac
+mas install 1225570693
+

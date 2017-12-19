@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+brew cask install aegisub
+brew cask install alfred
+brew cask install appcleaner
+brew cask install choosy
+brew cask install discord
+brew cask install docker
+brew cask install github
+brew cask install google-backup-and-sync
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install makemkv
+brew cask install ridibooks
+brew cask install selfcontrol
+brew cask install spectacle
+brew cask install steam
+brew cask install visual-studio-code
+brew cask install vlc
+brew cask install zeplin

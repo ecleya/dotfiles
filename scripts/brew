@@ -2,11 +2,12 @@
 
 brew install mas
 brew install ruby
+brew install ruby-install
 brew install python3
+brew install pyenv
 brew install peco
-brew install ffmpeg --with-x265 --with-fdk-aac
+brew install direnv
+brew install ffmpeg
 brew install mkvtoolnix
-brew install mediainfo
+brew install media-info
 brew install awscli
-
-brew install terraform

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "SelfControl", path:"/Applications/SelfControl.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Line", path:"/Applications/Line.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Slack", path:"/Applications/Slack.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Be Focused", path:"/Applications/Be Focused.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Things", path:"/Applications/Things.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 3", path:"/Applications/Alfred 3.app", hidden:false}'
