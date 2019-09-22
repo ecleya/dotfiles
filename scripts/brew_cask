@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-brew cask install alfred
 brew cask install appcleaner
 brew cask install docker
-brew cask install firefox
 brew cask install github
 brew cask install google-backup-and-sync
 brew cask install iterm2
 brew cask install karabiner-elements
 brew cask install makemkv
-brew cask install notion
 brew cask install plex-media-player
-brew cask install ridibooks
 brew cask install spectacle
 brew cask install visual-studio-code
 brew cask install vlc
+
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python

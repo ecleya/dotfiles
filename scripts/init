@@ -3,7 +3,5 @@
 xcode-select --install
 read -p "Press any key to continue... " -n1 -s
 
-sudo xcodebuild -license accept
-read -p "Press any key to continue... " -n1 -s
-
+sudo xcode-select --switch /Library/Developer/CommandLineTools
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

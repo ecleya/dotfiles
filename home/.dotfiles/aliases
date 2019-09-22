@@ -1,0 +1,56 @@
+# scripts
+extractsub() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" bdsup2sub "$*"
+}
+
+ffmpeg() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" --entrypoint "ffmpeg $*" ffmpeg
+}
+
+ffprobe() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" --entrypoint "ffprobe $*" ffmpeg
+}
+
+localtheater() {
+    export ADVERTISE_IP=http://$(ipconfig getifaddr en0):32400/
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml up localtheater
+    unset ADVERTISE_IP
+}
+
+mediainfo() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" --entrypoint "mediainfo $*" mediainfo
+}
+
+mkvmerge() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" --entrypoint "mkvmerge $*" mkvtoolnix
+}
+
+rclone() {
+    docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "/Users:/Users" -w "$(pwd)" --entrypoint "rclone $*" rclone
+}
+
+organize() {
+    ARGUMENTS=$(printf " \"%s\"" "${@:2}")
+    if [ "$1" = "movie" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" -v "${HOME}/Movies:/dst" --entrypoint="inv organizes.movie $ARGUMENTS" local
+    elif [ "$1" = "tvshow" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" -v "${HOME}/Movies:/dst" --entrypoint="inv organizes.tvshow $ARGUMENTS" local
+    elif [ "$1" = "raw" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "${HOME}/Movies:/src" --entrypoint="inv organizes.raw" local
+    elif [ "$1" = "music" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" -v "${HOME}/Music/iTunes/iTunes Media/Music":/itunes --entrypoint="inv organizes.music" local
+    elif [ "$1" = "book" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" --entrypoint="inv organizes.book" local
+    fi
+}
+
+subtitle() {
+    ARGUMENTS=$(printf " \"%s\"" "${@:2}")
+    if [ "$1" = "extract" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/workbench" bdsup2sub "$ARGUMENTS"
+    elif [ "$1" = "bdn2ssa" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" --entrypoint="inv subtitles.bdn2ssa $ARGUMENTS" local
+    elif [ "$1" = "bdn2vtt" ] ; then
+        docker-compose -f ~/Projects/blueviolet/docker-compose.yml run --rm -v "$(pwd):/src" --entrypoint="inv subtitles.bdn2vtt $ARGUMENTS" local
+    fi
+}

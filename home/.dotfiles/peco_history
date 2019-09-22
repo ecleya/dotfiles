@@ -35,4 +35,3 @@ peco-history() {
   fi
 }
 bind '"\C-r":"peco-history\n"'
-

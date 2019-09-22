@@ -12,9 +12,6 @@ mas install 409183694
 # install ru.keepcoder.Telegram
 mas install 747648890
 
-# install cx.c3.theunarchiver
-mas install 425424353
-
 # install com.agilebits.onepassword-osx
 mas install 443987910
 
@@ -39,18 +36,17 @@ mas install 408981434
 # install com.tinyspeck.slackmacgap
 mas install 803453959
 
-# install com.microsoft.rdc.macos
-mas install 1295203466
-
 # install com.ulyssesapp.mac
 mas install 1225570693
 
 # install com.apple.Compressor
 mas install 424390742
 
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 3", path:"/Applications/Alfred 3.app", hidden:false}'
+# install com.sindresorhus.Dato
+mas install 1470584107
+
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Line", path:"/Applications/Line.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Dato", path:"/Applications/Dato.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Slack", path:"/Applications/Slack.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
