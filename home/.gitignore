@@ -1,0 +1,9 @@
+# direnv
+.direnv
+.envrc
+
+# python
+.pytest_cache
+
+# node
+node_modules

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # install com.apple.FinalCut
 mas install 424389933
@@ -11,9 +11,6 @@ mas install 409183694
 
 # install ru.keepcoder.Telegram
 mas install 747648890
-
-# install com.agilebits.onepassword-osx
-mas install 443987910
 
 # install com.apple.motionapp
 mas install 434290957
@@ -38,9 +35,6 @@ mas install 803453959
 
 # install com.ulyssesapp.mac
 mas install 1225570693
-
-# install com.apple.Compressor
-mas install 424390742
 
 # install com.sindresorhus.Dato
 mas install 1470584107

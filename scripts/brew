@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 brew install bat
 brew install direnv
+brew install ffmpeg
+brew install jq
 brew install mas
+brew install mediainfo
+brew install mkvtoolnix
 brew install peco
 brew install pyenv
