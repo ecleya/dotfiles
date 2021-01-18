@@ -25,10 +25,17 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ###############################################################################
 # Trackpad, Mouse, Keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
-# Trackpad: enable tap to click for this user and for the login screen
+# Trackpad: enable tap to click
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
+# Trackpad: enable Three Finger Drag
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
@@ -174,7 +181,13 @@ defaults write com.apple.symbolichotkeys.plist AppleSymbolicHotKeys -dict-add 60
 "
 
 ###############################################################################
-# Mac App Store                                                               #
+# MenuBar                                                                     #
+###############################################################################
+defaults write com.apple.menuextra.clock IsAnalog -bool true
+defaults delete com.apple.Spotlight "NSStatusItem Visible Item-0"
+
+###############################################################################
+# App Store                                                                   #
 ###############################################################################
 # Enable the automatic update check
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true

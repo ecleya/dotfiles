@@ -1,19 +1,19 @@
 #!/usr/bin/env zsh
 
-brew cask install appcleaner
-brew cask install authy
-brew cask install docker
-brew cask install firefox
-brew cask install github
-brew cask install google-backup-and-sync
-brew cask install grammarly
-brew cask install iterm2
-brew cask install karabiner-elements
-brew cask install makemkv
-brew cask install spectacle
-brew cask install telegram
-brew cask install tripmode
-brew cask install visual-studio-code
+brew install appcleaner
+brew install authy
+brew install docker
+brew install firefox
+brew install github
+brew install google-backup-and-sync
+brew install grammarly
+brew install iterm2
+brew install karabiner-elements
+brew install makemkv
+brew install spectacle
+brew install telegram
+brew install tripmode
+brew install visual-studio-code
 
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-containers

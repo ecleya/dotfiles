@@ -7,3 +7,6 @@
 
 # node
 node_modules
+
+# macos
+.DS_Store

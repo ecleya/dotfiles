@@ -1,0 +1,29 @@
+pldiff() {
+    for entry in "$2"/*; do
+        filename=${entry/"$2\/"}
+        lhs=$(plutil -convert xml1 -o - "$1/$filename")
+        rhs=$(plutil -convert xml1 -o - "$2/$filename")
+        diff=$(diff -u <(echo "$lhs") <(echo "$rhs") "${@:3}")
+
+        if [[ ! -z "$diff" ]]; then
+            echo "Diff $filename"
+            echo $diff
+            echo
+        fi
+    done
+}
+
+plexport() {
+    folder=$1
+    export_domain() {
+        echo "$1"
+        echo
+        defaults export $1 ./$folder/$1.plist
+    }
+
+    mkdir -p $1
+    export_domain "NSGlobalDomain"
+    for domain in `defaults domains | tr ',' '\n'`; do
+        export_domain $domain
+    done
+}

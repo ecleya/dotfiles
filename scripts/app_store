@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+open -a "App Store"
 echo 'WARNING: You should login App Store before install Mac Apps.'
 echo 'Press any key to continue...'; read -k1 -s
 
