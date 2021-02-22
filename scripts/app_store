@@ -42,6 +42,12 @@ mas install 1470584107
 # install de.APPenzeller.Pipifier
 mas install 1160374471
 
+# install GoodNotes 5
+mas install 1444383602
+
+# install AdBlock Pro for Safari
+mas install 1018301773
+
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Dato", path:"/Applications/Dato.app", hidden:false}'
