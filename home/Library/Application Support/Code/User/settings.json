@@ -1,13 +1,14 @@
 {
     "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
     "editor.fontSize": 13,
     "debug.console.fontSize": 13,
     "terminal.integrated.fontSize": 13,
     "editor.minimap.enabled": true,
     "breadcrumbs.enabled": true,
     "window.zoomLevel": 1,
-    "python.pythonPath": "${workspaceFolder}/.direnv/python-3.7.4/bin/python",
     "python.testing.pytestEnabled": true,
     "python.linting.flake8Enabled": true,
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }

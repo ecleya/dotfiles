@@ -1,12 +1,2 @@
-# direnv
-.direnv
-.envrc
-
-# python
-.pytest_cache
-
-# node
-node_modules
-
 # macos
 .DS_Store

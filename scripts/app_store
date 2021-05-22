@@ -1,54 +1,48 @@
 #!/usr/bin/env zsh
+
+osascript -e 'display notification "Install App Store apps.\nYou should login first."'
 open -a "App Store"
 echo 'WARNING: You should login App Store before install Mac Apps.'
-echo 'Press any key to continue...'; read -k1 -s
-
-# install com.apple.FinalCut
-mas install 424389933
-
-# install jp.naver.line.mac
-mas install 539883307
-
-# install com.apple.iWork.Keynote
-mas install 409183694
-
-# install ru.keepcoder.Telegram
-mas install 747648890
-
-# install com.apple.motionapp
-mas install 434290957
-
-# install com.apple.iWork.Numbers
-mas install 409203825
-
-# install com.apple.dt.Xcode
-mas install 497799835
-
-# install com.apple.iWork.Pages
-mas install 409201541
-
-# install net.shinyfrog.bear
-mas install 1091189122
-
-# install com.apple.iMovieApp
-mas install 408981434
-
-# install com.ulyssesapp.mac
-mas install 1225570693
+echo 'Press any key to continue...'; read -n -s
 
 # install com.sindresorhus.Dato
 mas install 1470584107
 
+# install net.shinyfrog.bear
+mas install 1091189122 > /dev/null &
+
+# install jp.naver.line.mac
+mas install 539883307 > /dev/null &
+
+# install com.apple.iWork.Keynote
+mas install 409183694 > /dev/null &
+
+# install com.apple.iWork.Numbers
+mas install 409203825 > /dev/null &
+
+# install com.apple.iWork.Pages
+mas install 409201541 > /dev/null &
+
+# install ru.keepcoder.Telegram
+mas install 747648890 > /dev/null &
+
+# install com.apple.dt.Xcode
+mas install 497799835 > /dev/null &
+
+# install com.apple.FinalCut
+mas install 424389933 > /dev/null &
+
+# install com.apple.motionapp
+mas install 434290957 > /dev/null &
+
+# install com.apple.iMovieApp
+mas install 408981434 > /dev/null &
+
+# install com.ulyssesapp.mac
+mas install 1225570693 > /dev/null &
+
 # install de.APPenzeller.Pipifier
-mas install 1160374471
+mas install 1160374471 > /dev/null &
 
 # install GoodNotes 5
-mas install 1444383602
-
-# install AdBlock Pro for Safari
-mas install 1018301773
-
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Bear", path:"/Applications/Bear.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Dato", path:"/Applications/Dato.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
+mas install 1444383602 > /dev/null &

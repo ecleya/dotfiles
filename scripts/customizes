@@ -1,0 +1,50 @@
+#!/usr/bin/env zsh
+
+###############################################################################
+# VS Code                                                                     #
+###############################################################################
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vsliveshare.vsliveshare
+
+###############################################################################
+# Firefox                                                                     #
+###############################################################################
+osascript -e 'display notification "Please set toolkit.legacyUserProfileCustomizations.stylesheets preference to true"'
+echo 'Please set toolkit.legacyUserProfileCustomizations.stylesheets preference to true'
+open -a Firefox --args "about:config"; read -n -s
+
+PROFILE_PATH=$(ls -d ~/Library/Application\ Support/Firefox/Profiles/*.default-release)
+CHROME_PATH=$PROFILE_PATH/chrome
+
+echo $CHROME_PATH
+mkdir -p $CHROME_PATH
+cp ./scripts/userChrome.css "$CHROME_PATH"
+
+###############################################################################
+# Dato                                                                        #
+###############################################################################
+open -a Dato
+osascript -e 'display notification "Please wait until Dato is on."'
+echo 'Please wait until Dato is on.'; read -n -s
+defaults write com.sindresorhus.Dato KeyboardShortcuts_toggleDato -string "{\"carbonModifiers\":768,\"carbonKeyCode\":2}"
+defaults write com.sindresorhus.Dato dateTimeFormat -string "E MMM d hh:mm a"
+defaults write com.sindresorhus.Dato highlightedDaysInCalendar -string "[7]"
+defaults write com.sindresorhus.Dato iconInMenuBar -string "none"
+defaults write com.sindresorhus.Dato showAmPm -bool true
+defaults write com.sindresorhus.Dato showDateInMenuBar -bool true
+defaults write com.sindresorhus.Dato showMonthInMenuBar -bool true
+defaults write com.sindresorhus.Dato showSecondsInMenuBar -bool false
+defaults write com.sindresorhus.Dato showTimeInMenuBar -bool true
+defaults write com.sindresorhus.Dato showWeekDayInMenuBar -bool true
+defaults write com.sindresorhus.Dato WebKitPreferences.defaultTextEncodingName -string "utf-8"
+defaults write com.sindresorhus.Dato showWeekNumberInMenuBar -bool false
+pkill -u $(whoami) -x Dato
+
+###############################################################################
+# Login Items                                                                 #
+###############################################################################
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Dato", path:"/Applications/Dato.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Docker", path:"/Applications/Docker.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'

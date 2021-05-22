@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
 xcode-select --install
-echo 'Press any key to continue...'; read -k1 -s
+osascript -e 'display notification "Install Xcode commandline tool."'
+echo 'Press any key to continue...'; read -n -s
 
+osascript -e 'display notification "Install Homebrew"'
 sudo xcode-select --switch /Library/Developer/CommandLineTools
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
