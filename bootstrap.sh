@@ -1,12 +1,9 @@
 #!/usr/bin/env zsh
 
-if [ ! -n "$1" ]
-then
-    source ./scripts/init
-    source ./scripts/brew
-    source ./scripts/app_store
-    source ./scripts/brew_cask
-fi
+source ./scripts/init
+source ./scripts/brew
+source ./scripts/app_store
+source ./scripts/brew_cask
 source ./scripts/preferences
 source ./scripts/customizes
 

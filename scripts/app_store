@@ -6,7 +6,7 @@ echo 'WARNING: You should login App Store before install Mac Apps.'
 echo 'Press any key to continue...'; read -n -s
 
 # install com.sindresorhus.Dato
-mas install 1470584107
+mas install 1470584107 > /dev/null &
 
 # install net.shinyfrog.bear
 mas install 1091189122 > /dev/null &
@@ -44,5 +44,20 @@ mas install 1225570693 > /dev/null &
 # install de.APPenzeller.Pipifier
 mas install 1160374471 > /dev/null &
 
-# install GoodNotes 5
-mas install 1444383602 > /dev/null &
+# install Telegram
+mas install 747648890 > /dev/null &
+
+# install Slack
+mas install 803453959 > /dev/null &
+
+# install Jira Cloud by Atlassian
+mas install 1475897096 > /dev/null &
+
+# install Anki Notes: Flashcards Maker
+mas install 1503902660 > /dev/null &
+
+# install AdBlock Pro for Safari
+mas install 1018301773 > /dev/null &
+
+# install AdBlock for Safari
+mas install 1402042596 > /dev/null &

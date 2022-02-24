@@ -8,20 +8,6 @@ code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vsliveshare.vsliveshare
 
 ###############################################################################
-# Firefox                                                                     #
-###############################################################################
-osascript -e 'display notification "Please set toolkit.legacyUserProfileCustomizations.stylesheets preference to true"'
-echo 'Please set toolkit.legacyUserProfileCustomizations.stylesheets preference to true'
-open -a Firefox --args "about:config"; read -n -s
-
-PROFILE_PATH=$(ls -d ~/Library/Application\ Support/Firefox/Profiles/*.default-release)
-CHROME_PATH=$PROFILE_PATH/chrome
-
-echo $CHROME_PATH
-mkdir -p $CHROME_PATH
-cp ./scripts/userChrome.css "$CHROME_PATH"
-
-###############################################################################
 # Dato                                                                        #
 ###############################################################################
 open -a Dato
@@ -44,7 +30,5 @@ pkill -u $(whoami) -x Dato
 ###############################################################################
 # Login Items                                                                 #
 ###############################################################################
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Backup and Sync from Google", path:"/Applications/Backup and Sync from Google.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Dato", path:"/Applications/Dato.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Docker", path:"/Applications/Docker.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'

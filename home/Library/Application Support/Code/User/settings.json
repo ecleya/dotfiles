@@ -1,5 +1,8 @@
 {
     "files.autoSave": "onFocusChange",
+    "[dockerfile]": {
+        "editor.formatOnSave": false
+    },
     "editor.formatOnSave": true,
     "editor.fontSize": 13,
     "debug.console.fontSize": 13,
@@ -10,5 +13,8 @@
     "python.testing.pytestEnabled": true,
     "python.linting.flake8Enabled": true,
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "workbench.colorTheme": "Default Dark+",
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "security.workspace.trust.untrustedFiles": "open"
 }

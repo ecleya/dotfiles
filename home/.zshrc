@@ -7,8 +7,6 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_BEEP
 
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
 for file in ~/.dotfiles/*; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
