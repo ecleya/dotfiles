@@ -2,7 +2,10 @@
 
 osascript -e 'display notification "Install libraries"'
 
+brew install colima
+brew install docker
 brew install ffmpeg
+brew install kubernetes-cli
 brew install mas
 brew install mediainfo
 brew install mkvtoolnix

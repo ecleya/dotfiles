@@ -41,9 +41,6 @@ mas install 408981434 > /dev/null &
 # install com.ulyssesapp.mac
 mas install 1225570693 > /dev/null &
 
-# install de.APPenzeller.Pipifier
-mas install 1160374471 > /dev/null &
-
 # install Telegram
 mas install 747648890 > /dev/null &
 
@@ -61,3 +58,6 @@ mas install 1018301773 > /dev/null &
 
 # install AdBlock for Safari
 mas install 1402042596 > /dev/null &
+
+# install about:blank
+mas install 1239207203 > /dev/null &

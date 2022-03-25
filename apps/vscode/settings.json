@@ -16,5 +16,7 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.colorTheme": "Default Dark+",
     "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "githubPullRequests.fileListLayout": "flat"
 }

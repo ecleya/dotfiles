@@ -4,6 +4,8 @@
 # VS Code                                                                     #
 ###############################################################################
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vsliveshare.vsliveshare
 
@@ -30,5 +32,4 @@ pkill -u $(whoami) -x Dato
 ###############################################################################
 # Login Items                                                                 #
 ###############################################################################
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Docker", path:"/Applications/Docker.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
+defaults write com.knollsoft.Rectangle launchOnLogin -bool true
