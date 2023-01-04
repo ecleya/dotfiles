@@ -1,44 +1,43 @@
 #!/usr/bin/env zsh
 
+if [ $RUNNING_ON -eq "parallels" ]; then
+    echo "Skip Install Apps. Parallels doesn't support login to App Store.'
+    exit 0
+fi
+
 osascript -e 'display notification "Install App Store apps.\nYou should login first."'
 open -a "App Store"
 echo 'WARNING: You should login App Store before install Mac Apps.'
 echo 'Press any key to continue...'; read -n -s
 
-# install com.sindresorhus.Dato
-mas install 1470584107 > /dev/null &
-
-# install net.shinyfrog.bear
+# install Bear
 mas install 1091189122 > /dev/null &
 
-# install jp.naver.line.mac
+# install Line
 mas install 539883307 > /dev/null &
 
-# install com.apple.iWork.Keynote
+# install Keynote
 mas install 409183694 > /dev/null &
 
-# install com.apple.iWork.Numbers
+# install Numbers
 mas install 409203825 > /dev/null &
 
-# install com.apple.iWork.Pages
+# install Pages
 mas install 409201541 > /dev/null &
 
-# install ru.keepcoder.Telegram
-mas install 747648890 > /dev/null &
-
-# install com.apple.dt.Xcode
+# install Xcode
 mas install 497799835 > /dev/null &
 
-# install com.apple.FinalCut
+# install Final Cut Pro
 mas install 424389933 > /dev/null &
 
-# install com.apple.motionapp
+# install Motion
 mas install 434290957 > /dev/null &
 
-# install com.apple.iMovieApp
+# install iMovie
 mas install 408981434 > /dev/null &
 
-# install com.ulyssesapp.mac
+# install Ulysses
 mas install 1225570693 > /dev/null &
 
 # install Telegram
@@ -46,12 +45,6 @@ mas install 747648890 > /dev/null &
 
 # install Slack
 mas install 803453959 > /dev/null &
-
-# install Jira Cloud by Atlassian
-mas install 1475897096 > /dev/null &
-
-# install Anki Notes: Flashcards Maker
-mas install 1503902660 > /dev/null &
 
 # install AdBlock Pro for Safari
 mas install 1018301773 > /dev/null &
@@ -61,3 +54,24 @@ mas install 1402042596 > /dev/null &
 
 # install about:blank
 mas install 1239207203 > /dev/null &
+
+# install Pocket
+mas install 568494494 > /dev/null &
+
+# install Save to Pocket
+mas install 1477385213 > /dev/null &
+
+# install Things 3
+mas install 904280696 > /dev/null &
+
+# install OmniFocus 3
+mas install 1346203938 > /dev/null &
+
+# install UserScripts
+mas install 1463298887 > /dev/null &
+
+# install KakaoTalk
+mas install 869223134 > /dev/null &
+
+# install Flow
+mas install 1423210932 > /dev/null &

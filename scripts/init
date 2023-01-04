@@ -6,4 +6,8 @@ echo 'Press any key to continue...'; read -n -s
 
 osascript -e 'display notification "Install Homebrew"'
 sudo xcode-select --switch /Library/Developer/CommandLineTools
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> $HOME/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"

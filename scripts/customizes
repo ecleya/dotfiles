@@ -8,26 +8,7 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vsliveshare.vsliveshare
-
-###############################################################################
-# Dato                                                                        #
-###############################################################################
-open -a Dato
-osascript -e 'display notification "Please wait until Dato is on."'
-echo 'Please wait until Dato is on.'; read -n -s
-defaults write com.sindresorhus.Dato KeyboardShortcuts_toggleDato -string "{\"carbonModifiers\":768,\"carbonKeyCode\":2}"
-defaults write com.sindresorhus.Dato dateTimeFormat -string "E MMM d hh:mm a"
-defaults write com.sindresorhus.Dato highlightedDaysInCalendar -string "[7]"
-defaults write com.sindresorhus.Dato iconInMenuBar -string "none"
-defaults write com.sindresorhus.Dato showAmPm -bool true
-defaults write com.sindresorhus.Dato showDateInMenuBar -bool true
-defaults write com.sindresorhus.Dato showMonthInMenuBar -bool true
-defaults write com.sindresorhus.Dato showSecondsInMenuBar -bool false
-defaults write com.sindresorhus.Dato showTimeInMenuBar -bool true
-defaults write com.sindresorhus.Dato showWeekDayInMenuBar -bool true
-defaults write com.sindresorhus.Dato WebKitPreferences.defaultTextEncodingName -string "utf-8"
-defaults write com.sindresorhus.Dato showWeekNumberInMenuBar -bool false
-pkill -u $(whoami) -x Dato
+code --install-extension github.copilot
 
 ###############################################################################
 # Login Items                                                                 #
