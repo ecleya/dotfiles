@@ -2,6 +2,7 @@
 
 osascript -e 'display notification "Install libraries"'
 
+brew install colima
 brew install docker
 brew install ffmpeg
 brew install mas

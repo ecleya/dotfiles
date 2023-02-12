@@ -13,4 +13,8 @@ code --install-extension github.copilot
 ###############################################################################
 # Login Items                                                                 #
 ###############################################################################
-defaults write com.knollsoft.Rectangle launchOnLogin -bool true
+open -a "Alfred 5"
+open -a "Balance Lock"
+open -a "Bartender 4"
+open -a Dropbox
+open -a Rectangle

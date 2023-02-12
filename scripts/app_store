@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 if [ $RUNNING_ON -eq "parallels" ]; then
-    echo "Skip Install Apps. Parallels doesn't support login to App Store.'
+    echo "Skip Install Apps. Parallels doesn't support login to App Store."
     exit 0
 fi
 
@@ -46,20 +46,11 @@ mas install 747648890 > /dev/null &
 # install Slack
 mas install 803453959 > /dev/null &
 
-# install AdBlock Pro for Safari
-mas install 1018301773 > /dev/null &
-
 # install AdBlock for Safari
 mas install 1402042596 > /dev/null &
 
 # install about:blank
 mas install 1239207203 > /dev/null &
-
-# install Pocket
-mas install 568494494 > /dev/null &
-
-# install Save to Pocket
-mas install 1477385213 > /dev/null &
 
 # install Things 3
 mas install 904280696 > /dev/null &
@@ -72,6 +63,3 @@ mas install 1463298887 > /dev/null &
 
 # install KakaoTalk
 mas install 869223134 > /dev/null &
-
-# install Flow
-mas install 1423210932 > /dev/null &

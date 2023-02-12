@@ -11,3 +11,5 @@ for file in ~/.dotfiles/*; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
