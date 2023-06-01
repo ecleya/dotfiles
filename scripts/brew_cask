@@ -3,7 +3,6 @@
 osascript -e 'display notification "Install cask apps"'
 
 brew install --cask alfred
-brew install --cask anki
 brew install --cask appcleaner
 brew install --cask balance-lock
 brew install --cask bartender
@@ -16,13 +15,9 @@ brew install --cask mimestream
 brew install --cask moonlight
 brew install --cask notion
 brew install --cask obsidian
-brew install --cask parsec
 brew install --cask parallels
 brew install --cask rectangle
-brew install --cask roam-research
 brew install --cask sf-symbols
-brew install --cask syncthing
-brew install --cask unity-hub
 brew install --cask visual-studio-code
 brew install --cask warp
 brew install --cask zoom

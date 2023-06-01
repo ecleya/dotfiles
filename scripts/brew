@@ -4,6 +4,7 @@ osascript -e 'display notification "Install libraries"'
 
 brew install colima
 brew install docker
+brew install docker-compose
 brew install ffmpeg
 brew install mas
 brew install mediainfo

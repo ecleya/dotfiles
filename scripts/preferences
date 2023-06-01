@@ -209,7 +209,14 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "
 ###############################################################################
 # MenuBar                                                                     #
 ###############################################################################
-defaults write com.apple.menuextra.clock IsAnalog -bool true
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+defaults write com.apple.menuextra.clock Show24Hour -bool false
+defaults write com.apple.menuextra.clock ShowAMPM -bool true
+defaults write com.apple.menuextra.clock ShowDate -int 2
+defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+defaults write com.apple.menuextra.clock ShowSeconds -bool false
+
 
 ###############################################################################
 # App Store                                                                   #
