@@ -10,12 +10,12 @@ brew install --cask cron
 brew install --cask dropbox
 brew install --cask github
 brew install --cask karabiner-elements
+brew install --cask intellij-idea
 brew install --cask makemkv
 brew install --cask mimestream
 brew install --cask moonlight
 brew install --cask notion
 brew install --cask obsidian
-brew install --cask parallels
 brew install --cask rectangle
 brew install --cask sf-symbols
 brew install --cask visual-studio-code

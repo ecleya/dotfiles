@@ -55,9 +55,6 @@ mas install 1239207203 > /dev/null &
 # install Things 3
 mas install 904280696 > /dev/null &
 
-# install OmniFocus 3
-mas install 1346203938 > /dev/null &
-
 # install UserScripts
 mas install 1463298887 > /dev/null &
 
