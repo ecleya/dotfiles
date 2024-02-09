@@ -27,3 +27,13 @@ plexport() {
         export_domain $domain
     done
 }
+
+shift_subtitles() {
+    src=$1
+    echo $src
+    itoffset=$2
+    echo $itoffset
+    echo "${1%.*}"
+    dst=$(echo "${1%.*}")
+    ffmpeg -itsoffset $2 -i $1 $dst.$2.vtt
+}

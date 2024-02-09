@@ -1,2 +1,6 @@
+# direnv
+.direnv
+.envrc
+
 # macos
 .DS_Store

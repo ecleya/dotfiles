@@ -1,0 +1,11 @@
+use_python() {
+  local PYTHON_VENV_ROOT=$HOME/.venv/python/versions/$1
+  if [ ! -d ${PYTHON_VENV_ROOT} ]; then
+    CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v $1
+    $HOME/.venv/python/versions/$1/bin/pip install --upgrade pip
+    $HOME/.venv/python/versions/$1/bin/pip install virtualenv
+  fi
+
+  load_prefix "$PYTHON_VENV_ROOT"
+  layout_python "$PYTHON_VENV_ROOT/bin/python"
+}

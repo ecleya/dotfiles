@@ -164,32 +164,6 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 61 "<dic
 # Disable Hotkey for 'Show Spotlight search'.
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/></dict>"
 
-# Disable Spotlight Search Results
-## Set all spotlight search results to default
-defaults write com.apple.Spotlight orderedItems -array
-## Disable everything except Application
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><true/><key>name</key><string>APPLICATIONS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MENU_SPOTLIGHT_SUGGESTIONS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MENU_CONVERSION</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MENU_EXPRESSION</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MENU_DEFINITION</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>SYSTEM_PREFS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>DOCUMENTS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>DIRECTORIES</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>PRESENTATIONS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>SPREADSHEETS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>PDF</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MESSAGES</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>CONTACT</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>EVENT_TODO</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>IMAGES</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>BOOKMARKS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MUSIC</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MOVIES</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>FONTS</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>MENU_OTHER</string></dict>"
-defaults write com.apple.Spotlight orderedItems -array-add "<dict><key>enabled</key><false/><key>name</key><string>SOURCE</string></dict>"
-
 # Set Hotkey for 'Select the previous input source' to F18.
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "
   <dict>

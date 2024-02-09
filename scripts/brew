@@ -3,6 +3,7 @@
 osascript -e 'display notification "Install libraries"'
 
 brew install colima
+brew install direnv
 brew install docker
 brew install docker-compose
 brew install ffmpeg
@@ -10,3 +11,6 @@ brew install mas
 brew install mediainfo
 brew install mkvtoolnix
 brew install peco
+brew install pyenv
+
+brew install withgraphite/tap/graphite

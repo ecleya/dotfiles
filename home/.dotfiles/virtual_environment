@@ -1,0 +1,4 @@
+eval "$(direnv hook zsh)"
+
+export PYENV_ROOT="$HOME/.venv/python"
+export PATH="$PYENV_ROOT/bin:$PATH"

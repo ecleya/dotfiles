@@ -12,4 +12,6 @@ for file in ~/.dotfiles/*; do
 done;
 unset file;
 
+PROMPT="%n@%1~ "
+
 export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
