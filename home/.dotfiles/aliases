@@ -1,8 +1,19 @@
+# Compare plist files in two directories
 pldiff() {
     for entry in "$2"/*; do
         filename=${entry/"$2\/"}
         lhs=$(plutil -convert xml1 -o - "$1/$filename")
+        if [ $? -ne 0 ]; then
+            echo "Error converting $1/$filename to XML"
+            continue
+        fi
+        
         rhs=$(plutil -convert xml1 -o - "$2/$filename")
+        if [ $? -ne 0 ]; then
+            echo "Error converting $2/$filename to XML"
+            continue
+        fi
+        
         diff=$(diff -u <(echo "$lhs") <(echo "$rhs") "${@:3}")
 
         if [[ ! -z "$diff" ]]; then
@@ -13,6 +24,7 @@ pldiff() {
     done
 }
 
+# Export all domains from defaults to plist files
 plexport() {
     folder=$1
     export_domain() {
@@ -21,13 +33,15 @@ plexport() {
         defaults export $1 ./$folder/$1.plist
     }
 
-    mkdir -p $1
+    mkdir -p $folder
+
     export_domain "NSGlobalDomain"
     for domain in `defaults domains | tr ',' '\n'`; do
         export_domain $domain
     done
 }
 
+# Shift subtitles in a video file by a given offset
 shift_subtitles() {
     src=$1
     echo $src
@@ -36,4 +50,53 @@ shift_subtitles() {
     echo "${1%.*}"
     dst=$(echo "${1%.*}")
     ffmpeg -itsoffset $2 -i $1 $dst.$2.vtt
+}
+
+# Package the diff of the current git branch into a zip file
+package_git_diff() {
+    local BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+    local PROJECT_NAME=$(basename "$PWD")
+    local DATE=$(date +"%Y%m%d")
+    local PARENT_BRANCH=$(git show-branch | grep '\*' | grep -v "$BRANCH_NAME" | head -n1 | awk '{print $2}' | sed 's/\[//g' | sed 's/\]//g')
+
+    local CHANGED_FILES
+    if [ -z "$PARENT_BRANCH" ]; then
+        CHANGED_FILES=$(git diff --name-only)
+    else
+        CHANGED_FILES=$(git diff --name-only $PARENT_BRANCH...$BRANCH_NAME)
+    fi
+
+    if [ -z "$CHANGED_FILES" ]; then
+        echo "변경된 파일이 없습니다."
+        return 0
+    fi
+    CHANGED_FILES=(${(f)CHANGED_FILES})
+
+    local OUTPUT_FILENAME="${PROJECT_NAME}_${BRANCH_NAME}_${DATE}.zip"
+    local OUTPUT_PATH=~/Desktop/$OUTPUT_FILENAME
+
+    if [ -f $OUTPUT_PATH ]; then
+        rm $OUTPUT_PATH
+    fi
+
+    for FILE in $CHANGED_FILES; do
+        if [ -f "$FILE" ]; then
+            echo "Add $FILE"
+            zip -q $OUTPUT_PATH "$FILE"
+            if [ $? -ne 0 ]; then
+                echo "Error adding $FILE to zip"
+            fi
+        else
+            echo "Delete $FILE"
+            mkdir -p "$(dirname "$FILE")"
+            touch "$FILE"
+            zip -q $OUTPUT_PATH "$FILE"
+            if [ $? -ne 0 ]; then
+                echo "Error adding empty file for $FILE to zip"
+            fi
+            rm "$FILE"
+        fi
+    done
+
+    echo "Compression completed: $OUTPUT_PATH"
 }
