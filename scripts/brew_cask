@@ -4,20 +4,27 @@ osascript -e 'display notification "Install cask apps"'
 
 brew install --cask alfred
 brew install --cask appcleaner
-brew install --cask balance-lock
+brew install --cask balance-lock        # to prevent changing left-right balanc
+brew install --cask background-music    # to record macOS screen with audio
 brew install --cask bartender
-brew install --cask cron
-brew install --cask dropbox
+brew install --cask notion-calendar
+brew install --cask figma
 brew install --cask github
+brew install --cask gureumkim
 brew install --cask karabiner-elements
 brew install --cask intellij-idea
 brew install --cask makemkv
 brew install --cask mimestream
+brew install --cask monitorcontrol
 brew install --cask moonlight
-brew install --cask notion
 brew install --cask obsidian
+brew install --cask openvpn-connect
 brew install --cask rectangle
+brew install --cask sequel-ace
 brew install --cask sf-symbols
+brew install --cask slack
+brew install --cask syntax-highlight    # to support syntax highlighting in Quick Look
+brew install --cask tripmode
 brew install --cask visual-studio-code
 brew install --cask warp
 brew install --cask zoom
