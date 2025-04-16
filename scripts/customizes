@@ -12,9 +12,7 @@ code --install-extension github.copilot
 open -a "Alfred 5"
 open -a "Balance Lock"
 open -a "Bartender 4"
-open -a Line
 open -a "Notion Calendar"
-open -a KakaoTalk
 open -a Rectangle
 
 # Change Downloads folder to iCloud Drive
