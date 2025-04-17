@@ -49,9 +49,6 @@ mas install 803453959 > /dev/null &
 # install AdBlock for Safari
 mas install 1402042596 > /dev/null &
 
-# install about:blank
-mas install 1239207203 > /dev/null &
-
 # install Things 3
 mas install 904280696 > /dev/null &
 
