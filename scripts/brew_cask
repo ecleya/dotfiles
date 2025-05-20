@@ -6,7 +6,7 @@ brew install --cask alfred
 brew install --cask appcleaner
 brew install --cask balance-lock        # to prevent changing left-right balance
 brew install --cask bartender
-brew install --cask notion-calendar
+brew install --cask chatgpt
 brew install --cask figma
 brew install --cask github
 brew install --cask gureumkim
@@ -15,9 +15,12 @@ brew install --cask makemkv
 brew install --cask mimestream
 brew install --cask monitorcontrol
 brew install --cask moonlight
+brew install --cask notion
+brew install --cask notion-calendar
 brew install --cask obsidian
 brew install --cask rectangle
 brew install --cask sf-symbols
+brew install --cask steam
 brew install --cask syntax-highlight    # to support syntax highlighting in Quick Look
 brew install --cask visual-studio-code
 brew install --cask warp
