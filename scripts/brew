@@ -12,5 +12,7 @@ brew install mediainfo
 brew install mkvtoolnix
 brew install peco
 brew install pyenv
+brew install rclone
+brew install uv
 
 brew install withgraphite/tap/graphite
