@@ -16,4 +16,4 @@ open -a "Notion Calendar"
 open -a Rectangle
 
 # Change Downloads folder to iCloud Drive
-sudo rm -rf ~/Downlaods; ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/
+sudo rm -rf ~/Downloads; ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/

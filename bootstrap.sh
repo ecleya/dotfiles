@@ -7,7 +7,7 @@ source ./scripts/brew_cask
 source ./scripts/preferences
 source ./scripts/customizes
 
-cp ./home/ ~
+cp ./home/.* ~
 ln -s ~/Projects/dotfiles/home/.dotfiles/ ~/.dotfiles
 
 git clone https://github.com/ecleya/dotfiles.git ~/Projects/dotfiles
