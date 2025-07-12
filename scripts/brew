@@ -7,6 +7,7 @@ brew install direnv
 brew install docker
 brew install docker-compose
 brew install ffmpeg
+brew install gh
 brew install mas
 brew install mediainfo
 brew install mkvtoolnix
