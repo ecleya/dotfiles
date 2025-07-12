@@ -10,14 +10,26 @@ open -a "App Store"
 echo 'WARNING: You should login App Store before install Mac Apps.'
 echo 'Press any key to continue...'; read -n -s
 
+# install AdBlock for Safari
+mas install 1402042596 > /dev/null &
+
 # install Bear
 mas install 1091189122 > /dev/null &
+
+# install Final Cut Pro
+mas install 424389933 > /dev/null &
+
+# install iMovie
+mas install 408981434 > /dev/null &
+
+# install Keynote
+mas install 409183694 > /dev/null &
 
 # install Line
 mas install 539883307 > /dev/null &
 
-# install Keynote
-mas install 409183694 > /dev/null &
+# install Motion
+mas install 434290957 > /dev/null &
 
 # install Numbers
 mas install 409203825 > /dev/null &
@@ -25,38 +37,23 @@ mas install 409203825 > /dev/null &
 # install Pages
 mas install 409201541 > /dev/null &
 
-# install Xcode
-mas install 497799835 > /dev/null &
-
-# install Final Cut Pro
-mas install 424389933 > /dev/null &
-
-# install Motion
-mas install 434290957 > /dev/null &
-
-# install iMovie
-mas install 408981434 > /dev/null &
-
-# install Ulysses
-mas install 1225570693 > /dev/null &
+# install Slack
+mas install 803453959 > /dev/null &
 
 # install Telegram
 mas install 747648890 > /dev/null &
 
-# install Slack
-mas install 803453959 > /dev/null &
-
-# install AdBlock for Safari
-mas install 1402042596 > /dev/null &
-
-# install about:blank
-mas install 1239207203 > /dev/null &
-
 # install Things 3
 mas install 904280696 > /dev/null &
+
+# install TripMode
+mas install 1513400665 > /dev/null &
+
+# install Ulysses
+mas install 1225570693 > /dev/null &
 
 # install UserScripts
 mas install 1463298887 > /dev/null &
 
-# install KakaoTalk
-mas install 869223134 > /dev/null &
+# install Xcode
+mas install 497799835 > /dev/null &
