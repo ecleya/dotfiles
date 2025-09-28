@@ -2,18 +2,21 @@
 
 osascript -e 'display notification "Install libraries"'
 
+brew install atomicparsley
 brew install colima
+brew install codex
 brew install direnv
 brew install docker
 brew install docker-compose
+brew install fastlane
 brew install ffmpeg
+brew install gemini-cli
 brew install gh
 brew install mas
 brew install mediainfo
 brew install mkvtoolnix
+brew install openjdk
 brew install peco
 brew install pyenv
 brew install rclone
 brew install uv
-
-brew install withgraphite/tap/graphite

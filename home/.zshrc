@@ -24,3 +24,4 @@ unset file;
 PROMPT="%n@%1~ "
 
 export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

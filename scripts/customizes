@@ -8,12 +8,5 @@ code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension github.copilot
 
-# Login Items
-open -a "Alfred 5"
-open -a "Balance Lock"
-open -a "Bartender 4"
-open -a "Notion Calendar"
-open -a Rectangle
-
 # Change Downloads folder to iCloud Drive
 sudo rm -rf ~/Downloads; ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/

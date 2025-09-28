@@ -3,20 +3,38 @@
         {
             "fn_function_keys": [
                 {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "shell_command": "open -b com.runningwithcrayons.Alfred" }]
+                    "from": {
+                        "key_code": "f4"
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -b com.raycast.macos"
+                        }
+                    ]
                 }
             ],
             "name": "Default profile",
             "selected": true,
             "simple_modifications": [
                 {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "f18" }]
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f18"
+                        }
+                    ]
                 },
                 {
-                    "from": { "key_code": "f19" },
-                    "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                    "from": {
+                        "key_code": "f19"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                        }
+                    ]
                 }
             ],
             "virtual_hid_keyboard": {
