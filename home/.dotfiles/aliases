@@ -100,3 +100,28 @@ package_git_diff() {
 
     echo "Compression completed: $OUTPUT_PATH"
 }
+
+
+merge-dash() {
+  local dir="${1:-.}"  # 인자 없으면 현재 폴더
+
+  echo "📁 폴더: $dir"
+  echo "🔗 세그먼트 합치는 중..."
+
+  (cat "$dir/init-stream0.m4s"; \
+   for f in $(ls "$dir/chunk-stream0-"*.m4s | sort); do cat "$f"; done) > video_raw.mp4
+
+  (cat "$dir/init-stream1.m4s"; \
+   for f in $(ls "$dir/chunk-stream1-"*.m4s | sort); do cat "$f"; done) > audio_raw.mp4
+
+  echo "🎬 muxing 중..."
+  ffmpeg -fflags +genpts -i video_raw.mp4 \
+         -fflags +genpts -i audio_raw.mp4 \
+         -map 0:v -map 1:a \
+         -c copy -movflags +faststart \
+         -tag:v hvc1 \
+         output.mp4
+
+  rm video_raw.mp4 audio_raw.mp4
+  echo "✅ 완료: ${2:-output.mp4}"
+}

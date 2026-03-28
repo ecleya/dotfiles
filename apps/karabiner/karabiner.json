@@ -8,7 +8,13 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -b com.raycast.macos"
+                            "key_code": "spacebar",
+                            "modifiers": [
+                                "left_control",
+                                "left_command",
+                                "left_option",
+                                "left_shift"
+                            ]
                         }
                     ]
                 }

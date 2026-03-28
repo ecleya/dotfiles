@@ -3,8 +3,7 @@
 osascript -e 'display notification "Install libraries"'
 
 brew install atomicparsley
-brew install colima
-brew install codex
+brew install deno
 brew install direnv
 brew install docker
 brew install docker-compose

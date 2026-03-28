@@ -49,9 +49,6 @@ mas install 904280696 > /dev/null &
 # install TripMode
 mas install 1513400665 > /dev/null &
 
-# install Ulysses
-mas install 1225570693 > /dev/null &
-
 # install UserScripts
 mas install 1463298887 > /dev/null &
 
