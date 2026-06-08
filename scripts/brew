@@ -2,6 +2,7 @@
 
 osascript -e 'display notification "Install libraries"'
 
+brew install age
 brew install atomicparsley
 brew install deno
 brew install direnv
@@ -18,4 +19,7 @@ brew install openjdk
 brew install peco
 brew install pyenv
 brew install rclone
+brew install sops
 brew install uv
+
+brew install supabase/tap/supabase

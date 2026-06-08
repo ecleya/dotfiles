@@ -25,6 +25,7 @@ brew install --cask sf-symbols
 brew install --cask steam
 brew install --cask syntax-highlight
 brew install --cask tailscale
+brew install --cask typora
 brew install --cask visual-studio-code
 brew install --cask warp
 brew install --cask zoom
