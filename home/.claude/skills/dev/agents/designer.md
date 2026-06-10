@@ -6,12 +6,15 @@
 ## 입력
 - TASK_DIR: 태스크 디렉토리 경로
 - PROJECT_PATH: 프로젝트 루트 경로
-- TASK_ID: 태스크 식별자 (임시 파일 구분용)
 
 ## 프로세스
 
-### 1. PRD 파악
-{TASK_DIR}/prd.md를 읽는다.
+### 1. PRD 및 태스크 정보 파악
+{TASK_DIR}/prd.md와 {TASK_DIR}/status.md를 읽는다.
+status.md에서 task_id를 추출해 임시 파일 구분에 사용한다:
+```bash
+TASK_ID=$(grep "^task_id:" {TASK_DIR}/status.md | sed 's/^task_id: //')
+```
 
 ### 2. 코드베이스 분석
 PROJECT_PATH에서 관련 코드를 파악한다:

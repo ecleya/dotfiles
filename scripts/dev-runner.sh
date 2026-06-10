@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-# dev-runner.sh — 야간 자율 실행 스크립트
+# dev-runner.sh — 자율 실행 스크립트
 # cron: 0 22 * * * /Users/ecleya/Projects/dotfiles/scripts/dev-runner.sh >> ~/.claude/dev-runner.log 2>&1
 
 REGISTRY="$HOME/.claude/dev-registry"

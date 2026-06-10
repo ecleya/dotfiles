@@ -12,7 +12,11 @@
 - 발생 불가능한 시나리오를 위한 에러 핸들링 금지
 - 보안: 사용자 입력과 외부 API 경계에서만 검증
 
+## 설정
+- project_owner_email: ecleya@gmail.com
+
 ## 워크플로우
 - 모든 개발 작업은 `/dev`로 시작
 - 머지는 사용자가 명시적으로 요청할 때만
-- 보고서는 항상 이메일(ecleya@gmail.com)로 발송
+- 보고서는 GitHub Issue로 생성, 이메일로 알림 발송
+- Claude가 PR/Issue에 남기는 댓글에는 🤖 prefix 사용

@@ -4,11 +4,17 @@
 
 ## 입력
 - TASK_DIR: 태스크 디렉토리 경로
-- TASK_ID: 태스크 식별자
-- TASK_NAME: 태스크 이름
 - REPORT_TYPE: "design" | "implementation" | "minor"
 - PROJECT_PATH: 프로젝트 루트 경로
-- EMAIL: 수신자 이메일 (기본: ecleya@gmail.com)
+
+## 설정 로드
+TASK_DIR/status.md에서 task_id, task_name을 읽는다.
+이메일 주소는 ~/.claude/CLAUDE.md의 project_owner_email에서 읽는다:
+```bash
+TASK_ID=$(grep "^task_id:" {TASK_DIR}/status.md | sed 's/^task_id: //')
+TASK_NAME=$(grep "^task_name:" {TASK_DIR}/status.md | sed 's/^task_name: //')
+OWNER_EMAIL=$(grep "^- project_owner_email:" ~/.claude/CLAUDE.md | sed 's/^- project_owner_email: //')
+```
 
 ## 보고서 원칙
 - **두괄식**: 결정사항과 결론이 먼저, 근거와 논의 과정은 Appendix
