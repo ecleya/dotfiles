@@ -6,11 +6,7 @@ brew install age
 brew install atomicparsley
 brew install deno
 brew install direnv
-brew install docker
-brew install docker-compose
-brew install fastlane
 brew install ffmpeg
-brew install gemini-cli
 brew install gh
 brew install mas
 brew install mediainfo
@@ -21,5 +17,3 @@ brew install pyenv
 brew install rclone
 brew install sops
 brew install uv
-
-brew install supabase/tap/supabase

@@ -19,17 +19,11 @@ mas install 1091189122 > /dev/null &
 # install Final Cut Pro
 mas install 424389933 > /dev/null &
 
-# install iMovie
-mas install 408981434 > /dev/null &
-
 # install Keynote
 mas install 409183694 > /dev/null &
 
 # install Line
 mas install 539883307 > /dev/null &
-
-# install Motion
-mas install 434290957 > /dev/null &
 
 # install Numbers
 mas install 409203825 > /dev/null &
@@ -51,6 +45,3 @@ mas install 1513400665 > /dev/null &
 
 # install UserScripts
 mas install 1463298887 > /dev/null &
-
-# install Xcode
-mas install 497799835 > /dev/null &
